@@ -1,0 +1,50 @@
+### GET request with a header
+GET http://localhost:3000/api/video
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 888,
+  "value": "content"
+}
+
+
+### Send POST request with json body
+PUT http://localhost:3000/api/video
+Content-Type: application/json
+
+{
+  "authorName": "Joven Pan Esportes",
+  "thumb": "https://i.ytimg.com/vi/zJUBg-0KL7A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDnQrwD8ojVPVzE78xn4BY0x-FtQg",
+  "title": "É RIDÍCULO! O Flamengo NÃO TEM... Mauro Cezar CRITICA desvantagem para o Palmeiras no Brasileirão!",
+  "authorAvatar": "Joven Pan Esportes",
+  "updateAt": "11/11/2022",
+  "views": "169000"
+}
+
+### Send POST request with json body
+PUT http://localhost:3000/api/video
+Content-Type: application/json
+
+{
+  "authorName": "Rockseat",
+  "thumb": "https://i.ytimg.com/vi/zhgbanI0UV8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYoPwZPIQn58oF0WH6IQontyx1rA",
+  "title": "Esse PATTERN do React pode te salvar (+ lib secreta)",
+  "authorAvatar": "Rockseat",
+  "updateAt": "12/10/2022",
+  "views": "130000"
+}
+
+
+### Send POST request with json body
+PUT http://localhost:3000/api/video
+Content-Type: application/json
+
+{
+  "authorName": "eusouteu23",
+  "thumb": "https://i.ytimg.com/vi/ObBWFhxT2n8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGhdLXTX4x26iw9wA7AOECtrRLpA",
+  "title": "Deixa Queimar - Alessandro Vilas Boas | Som do Reino (com letra)222",
+  "authorAvatar": "eusouteu23",
+  "updateAt": "10/10/2022",
+  "views": "46"
+}
