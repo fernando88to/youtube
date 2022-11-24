@@ -13,7 +13,7 @@ export const getServerSideProps: GetServerSideProps = async (context:GetServerSi
 
 
     const session = await getSession({req:context.req});
-    console.log(session);
+    //console.log(session);
 
     const data: VideoType[] = await mongoClientServices.getAllVideos();
     return {
@@ -36,7 +36,7 @@ export default function Home(props: PropsHome) {
                 <Grid container spacing={4}>
                     {props.data.map((item) => {
                         return (
-                            <Grid key={item.title} item xl={3} lg={3} md={4} sm={6} xs={12}>
+                            <Grid key={item._id.toString()} item xl={3} lg={3} md={4} sm={6} xs={12}>
                                 <VideoCard item={item} />
                             </Grid>
 

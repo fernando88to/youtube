@@ -9,6 +9,8 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
+
+                    <meta name="referrer" content="no-referrer" />
                     {/* PWA primary color */}
                     <meta name="theme-color" content={theme.palette.primary.main} />
                     <link rel="shortcut icon" href="/favicon.ico" />

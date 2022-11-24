@@ -48,9 +48,6 @@ const InputBaseCustomize = styled(InputBase)({
 
 function TopBar() {
     const { data: session } = useSession();
-    //console.log(session?.user?.image)
-    //session?.address && console.log(session?.address);
-    //const { toggleSideBar } =  useContext(SideBarContext);
     const { toggleSideBar } =  useGetSideBarContext();
     const closeSidebar = () => toggleSideBar();
 
@@ -99,6 +96,7 @@ function TopBar() {
                     ): (
                         <Box display="flex">
                             <Avatar
+
                                 onClick={()=>{signOut()}}
                                 alt="Usuario"
                                 src={session?.user?.image || ""}>

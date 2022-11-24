@@ -19,3 +19,14 @@ https://www.youtube.com/watch?v=3j4F9al12mw
 
 
 https://github.com/nextauthjs/next-auth-typescript-example
+
+
+### Carregar a imagem do google
+
+A imagem do usuário do google não estava carregando normalmente.
+
+Para resolver isso foi adicionado no "head" do html
+
+```
+<meta name="referrer" content="no-referrer" />
+```

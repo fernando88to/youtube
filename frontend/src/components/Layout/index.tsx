@@ -4,6 +4,7 @@ import theme from "../../config/theme";
 import TopBar from "./TopBar";
 import NavBar from "./NavBar";
 import {SideBarProvider} from "../../contexts/SideBarContext";
+import {useSession} from "next-auth/react";
 
 
 const Root = styled('div')(({theme: Theme}) => ({
@@ -49,6 +50,9 @@ interface propLayout {
 }
 
 function Layout(props: propLayout) {
+    //const {data:session} = useSession();
+
+
     return (
         <>
             <Head>
